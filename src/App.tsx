@@ -1,8 +1,11 @@
 import { useState } from 'react'
+import { AccountForm } from './components/AccountForm'
+import { AddressForm } from './components/AddressForm'
+import { UserForm } from './components/UserForm'
 import { useMultistepForm } from './hooks/useMultistepForm'
 
 function App() {
-  const { steps, currentStepIndex, step, isFirstStep, isLastStep, next, back } = useMultistepForm([<div>One</div>, <div>Two</div>])
+  const { steps, currentStepIndex, step, isFirstStep, isLastStep, next, back } = useMultistepForm([<UserForm />, <AddressForm />, <AccountForm />])
   return (
     <div style={{
       position: 'relative',
