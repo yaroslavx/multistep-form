@@ -56,6 +56,7 @@ function App() {
       margin: '1rem',
       borderRadius: '.5rem',
       fontFamily: 'Arial',
+      maxWidth: 'max-content'
     }}>
       <form onSubmit={onSubmit}>
         <div style={{ position: 'absolute', top: '.5rem', right: '.5rem' }}>
