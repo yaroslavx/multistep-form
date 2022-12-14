@@ -11,8 +11,8 @@ export function FormWrapper({ title, children }: FormWrapperProps) {
         <div style={{
             display: 'grid',
             gap: '1rem .5rem',
-            justifyContent: "flex-start",
-            gridTemplateColumns: 'auto minmax(auto, 400px'
+            justifyContent: "center",
+            gridTemplateColumns: 'auto minmax(auto, 400px)'
         }}>{children}</div>
     </>
 }
