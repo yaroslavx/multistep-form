@@ -8,7 +8,7 @@ export function useMultistepForm(steps: ReactElement[]) {
   }
 
   function back() {
-    setCurrentStepIndex((i) => (i <= 0 ? steps.length - 1 : i - 1));
+    setCurrentStepIndex((i) => (i <= 0 ? i : i - 1));
   }
 
   function goTo(index: number) {
@@ -18,6 +18,7 @@ export function useMultistepForm(steps: ReactElement[]) {
   return {
     currentStepIndex,
     step: steps[currentStepIndex],
+    steps,
     next,
     back,
     goTo,
